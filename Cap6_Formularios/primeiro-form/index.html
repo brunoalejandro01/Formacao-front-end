@@ -30,6 +30,43 @@
             </select>
         </div>
 
+        <!-- Multiplas opções -->
+        <div>
+            <label for="lista">Selecione os itens abaixo</label>
+            <select name="lista" id="" multiple>
+                <option value="arroz">arroz</option>
+                <option value="feijao">feijão</option>
+                <option value="macarrao">macarrao</option>
+                <option value="batata">batata</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="comments">Comentário:</label>
+           <textarea name="comments" id="text_teste" cols="30" rows="5"></textarea>
+        </div>
+
+        <!-- Fieldset e Legend -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="">
+            <label for="age">Idade:</label>
+            <input type="number" name="age" id="">
+        </fieldset>
+
+        <!-- Datalist -->
+        <label for="sabores">Escolha o sabor</label>
+        <input type="text" name="sabores" id="" list="sabor">
+
+        <datalist id="sabor">
+            <option value="chocolate"></option>
+            <option value="morango"></option>
+            <option value="maracuja"></option>
+            <option value="limao"></option>
+        </datalist>
+
         <!-- Envio de formulário -->
         <div>
             <input type="submit" value="Enviar">
