@@ -67,9 +67,58 @@
             <option value="limao"></option>
         </datalist>
 
+        <!-- Radio button -->
+        <fieldset>
+            <legend>Input radio</legend>
+                <div>
+                    <label for="car_model">Escolha o modelo do seu carro:</label>
+                    <div class="radio">
+                        <input type="radio" name="chevrolet" id="car_model">
+                        <label for="chevrolet">Onix</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="fiat" id="car_model">
+                        <label for="fiat">Argo</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="renault" id="car_model">
+                        <label for="renault">Logan</label>
+                    </div>
+                </div>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <fieldset>
+            <legend>Input checkbox</legend>
+            <div>
+                <label for="options">Opcionais do carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="pneus_grandes">
+                    <label for="pneus_grandes">Pneus grandes</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="motor_turbo">
+                    <label for="motor_turbo">Motor turbo</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </div>
+            </div>
+        </fieldset>
+        
+         <!-- Envio de arquivos -->
+        <fieldset>
+            <div>
+                <label for="image">Insira a sua imagem</label>
+                <input type="file" name="image" id="img">
+            </div>
+        </fieldset>
+
         <!-- Envio de formulário -->
-        <div>
-            <input type="submit" value="Enviar">
+        <div class="button">
+            <input type="submit" value="Enviar" class="btn1">
+            <input type="reset" value="Limpar" class="btn2">
         </div>
     </form>
 </body>
