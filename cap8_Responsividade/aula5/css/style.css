@@ -1,0 +1,32 @@
+/*Padrão*/
+h1{
+    color: white;
+    background-color: blue;
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        background-color: aqua;
+        color: black;
+        border-radius: 10px;
+        font-style: italic;
+    }
+}
+
+/*Configuração para telas com no mínimo 600px*/
+@media screen and (min-width: 600px) {
+    h1{
+        color: chartreuse;
+        background-color: black;
+    }
+}
+
+/*Configuração para telas com no mínimo 700px*/
+@media screen and (min-width: 700px) {
+    h1{
+        color: rgb(255, 0, 234);
+        background-color: black;
+    }
+}

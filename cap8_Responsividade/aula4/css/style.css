@@ -1,0 +1,17 @@
+h1{
+    color: lightseagreen;
+}
+
+/*configuração para larguras de até 500px*/
+@media screen and (max-width: 500px) {
+    h1{
+        color: blue;
+    }
+}
+
+/*configuração para larguras de até 300px*/
+@media screen and (max-width: 300px){
+    h1{
+        color: blueviolet;
+    }    
+}

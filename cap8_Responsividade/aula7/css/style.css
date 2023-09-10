@@ -1,0 +1,19 @@
+h1{
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h1{
+        display: block;
+        color: chartreuse;
+        background-color: black;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1300px) {
+    h1{
+        display: block;
+        color: rgb(242, 0, 255);
+        background-color: rgb(244, 255, 212);
+    }
+}
