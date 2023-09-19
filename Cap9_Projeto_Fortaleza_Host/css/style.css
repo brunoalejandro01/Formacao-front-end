@@ -6,41 +6,48 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+}
+
 h1{
     color: #202020;
     font-size: 3em;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /* NAVBAR CONTAINER*/
-.navbar-container{
-    background-color: #232a31;
-
-    width: 100%;
-    height: 80px;
-    padding: 0px 2%;
-}
-
 nav{
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+
+    background-color: #232a31;
 }
 
-.logo{
-    width: 4.25%;
-    margin-top: 15px;
+nav .logo{
+    margin-right: auto; /* empurrar a imagem para a esquerda */
+    padding-left: 2%;
+}
+
+nav .logo img{
+    width: 35%;
+    margin-top: 2%;
 }
 
 .navbar-items{
-    position: absolute;
-    right: 1.8%; /*enviou os itens para o canto direito da tela*/
-    height: 80px;
-    line-height: 80px; /*serve para deixar o espaço que o item ocupa do mesmo tamanho da altura da header*/
-    margin: 0;
-    display: inline-block;
+    display: flex; 
+    list-style: none;
+    margin-left: auto; /* empurrar os itens da lista para a direita */
 }
 
 .navbar-items li{
-    display: inline-block;
-    margin-left: 25px; /*espaçamento entre os itens*/
+    padding-right: 25px; /* espaçamento entre os itens */
 }
 
 .navbar-items a{
@@ -58,12 +65,29 @@ nav{
 
 .default-btn{
     background-color: rgb(16, 87, 145);
-    padding: 30% 25%;
     border-radius: 10px;
+    padding: 12px 12px;
 }
 
 .navbar-items .default-btn:hover{
     color: #fff;
     background-color: rgb(24, 121, 200);
     box-shadow: 2px 2px rgb(53, 53, 53);
+}
+
+/* main banner*/
+.main-banner{
+    background-image: url(../assets/mainbanner.png);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    padding: 5.5% 0;
+}
+
+.main-banner h1,
+.main-banner p{
+    color: #f9f9f9;
+    text-align: center;
+    
+    text-shadow: #292929 3px 2px 3px;
 }
