@@ -6,14 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-}
-
 h1{
     color: #202020;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .bold{
@@ -27,53 +22,50 @@ nav{
     align-items: center;
     height: 60px;
     width: 100%;
-
     background-color: #232a31;
 }
 
-nav .logo{
-    margin-right: auto; /* empurrar a imagem para a esquerda */
-    padding-left: 2%;
+.navbar-logo{
+    margin-right: auto;
 }
 
-nav .logo img{
-    width: 30%;
-    margin-top: 10%;
+.navbar-logo .logo{
+    width: 40px;
+    margin-top: 2%;
+    margin-left: 20px;
 }
 
 .navbar-items{
-    display: flex; 
-    list-style: none;
-    margin-left: auto; /* empurrar os itens da lista para a direita */
+    display: flex; /* Exibe os itens da lista como flexíveis */
+    list-style: none; /* Remova marcadores de lista */
+    margin-left: auto; /* Empurra a lista para a direita */
 }
 
 .navbar-items li{
-    padding-right: 25px; /* espaçamento entre os itens */
+    margin-right: 20px;
 }
 
 .navbar-items a{
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
-    transition: ease(0.2s);
+    transition: 0.5s;
     font-weight: bold;
 }
 
 .navbar-items a:hover{
-    cursor: pointer;
     color: #cecece;
 }
 
 .default-btn{
     background-color: #2cc762;
     border-radius: 10px;
-    padding: 12px 12px;
+    padding: 15px 20px;
 }
 
 .navbar-items .default-btn:hover{
     color: #fff;
     background-color: #50fd8d;
-    box-shadow: 2px 2px rgb(53, 53, 53);
 }
 
 /* MAIN BANNER */
@@ -81,41 +73,48 @@ nav .logo img{
     background-image: url(../assets/mainbanner.png);
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    padding: 5rem 0;
 }
 
 .main-banner h1{
     color: #f9f9f9;
     text-align: center;
     text-shadow: #292929 3px 2px 3px;
-
-    padding-top: 10vh;
+    font-weight: bold;
 }
 
 .main-banner p{
     color: #f9f9f9;
     text-align: center;
-    text-shadow: #292929 3px 2px 3px;;
+    text-shadow: #292929 3px 2px 3px;
+    font-size: 1.2em;
 }
 
 /* SERVICES */
 .services-container{
-    padding: 3% 0;
+    padding: 2% 0;
 }
 
 .services-container ul{
     /* Deixar os li um ao lado do outro*/
     display: flex;
     margin: 0 auto;
-    width: 98%;
-    flex-wrap: wrap;
+    width: 90%;
 }
 
 .services-container li{
     flex: 1 1 200px;
     list-style: none;
     text-align: center;
-    padding: 0 2%;
+    padding: 10px;
+}
+
+.services-container h3{
+    margin-bottom: 2%;
+}
+
+.services-container p{
+    line-height: 23px;
 }
 
 .fas{
@@ -133,15 +132,6 @@ nav .logo img{
 
 .fa-comments{
     color: #ef8f29;
-}
-
-.services-container h3{
-    margin-bottom: 2%;
-}
-
-.services-container p{
-    line-height: 23px;
-    text-align: justify;
 }
 
 /* PRICES AND PLANS */
@@ -162,13 +152,14 @@ nav .logo img{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1% auto;
+    width: 90%;
+    margin: 3% auto;
 }
 
 .plan{
     flex: 1;
     max-width: 275px;
-    margin: 1% 2%;
+    margin: 0 1%;
 }
 
 .plan ul{
@@ -194,7 +185,7 @@ nav .logo img{
     
     text-align: center;
     line-height: 120px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
 
     margin: 0 auto -50px;
@@ -203,7 +194,7 @@ nav .logo img{
 
 .plan .plan-name{
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bolder;
 
     color: #fff;
@@ -224,8 +215,8 @@ nav .logo img{
     font-weight: 600;
     font-size: 1.2em;
 
-    height: 75px;
-    line-height: 75px;
+    height: 60px;
+    line-height: 60px;
 
     cursor: pointer;
 }
@@ -242,8 +233,8 @@ nav .logo img{
     font-weight: 600;
     font-size: 1.2em;
 
-    height: 75px;
-    line-height: 75px;
+    height: 60px;
+    line-height: 60px;
 
     cursor: pointer;
 }
@@ -258,19 +249,18 @@ nav .logo img{
     background-color: #34454e;
     text-align: center;
 
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
 .searchDomain-container h2{
     font-size: 3em;
     color: #fff;
-    margin-bottom: 1%;
 }
 
 .searchDomain-container p{
     color: #d5d5d5;
     font-size: 1.3em;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
 }
 
 .searchDomain-container input{
@@ -307,4 +297,144 @@ nav .logo img{
     background-color: #50fd8d;
 
     font-size: 1.2em;
+}
+
+/* CONTACT FORMS*/
+.contact-container{
+    text-align: center;
+    padding: 2% 0;
+}
+
+.contact-container h2{
+    font-size: 2em;
+    margin-bottom: 0.5%;
+}
+
+.contact-container p{
+    font-size: 1.2em;
+    margin-bottom: 1.5%;
+}
+
+.contact-container input,
+.contact-container textarea{
+    width: 200px;
+
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+
+    font-size: 1.1em;
+
+    border-radius: 5px;
+    border: 2px solid #b1b1b1;
+}
+
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 15px;
+
+    width: 415px;
+    height: 150px;
+}
+
+.contact-container input[type='submit']{
+    display: block;
+    margin: 0 auto;
+
+    background-color: #2cc762;
+    border: none;
+    color: #fff;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 1% 0;
+}
+
+/* RESPONSIVIDADE */
+
+/* small laptops (a partir de 1100px) */
+@media (max-width: 1100px) {
+    nav .logo img{
+        width: 40px;
+        margin-top: 5px;
+    }
+
+    .main-banner h1{
+        font-size: 4em;
+    }
+
+    .main-banner p{
+        font-size: 1.3em;
+    }
+} 
+
+/* tablet (900px para baixo) */
+@media (max-width: 900px) {
+    .main-banner p{
+        font-size: 1.3em;
+    }
+}
+
+/* PHONE (576px) */
+@media (max-width: 576px){
+    .main-banner{
+        padding: 2.5rem 0;
+    }
+    .main-banner p{
+        padding: 0 1.5%;
+        font-size: 1.1em;
+    }
+    
+    .services-container ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .services-container p{
+        text-align: justify;
+        padding: 0 1.5%;
+    }
+
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .plan{
+        width: 100;
+        max-width: 100%;
+        padding: 2% 0;
+    }
+
+    .searchDomain-container{
+        padding: 4% 0;
+    }
+    .searchDomain-container h2{
+        padding-bottom: 1%;
+        font-size: 2.5em;
+    }
+    .searchDomain-container p{
+        font-size: 1.1em;
+        padding-bottom: 0.5%;
+    }
+    .searchDomain-container input[type='text']{
+        padding: 3% 1%;
+        margin-bottom: 3%;
+    }
+    .searchDomain-container input[type='submit']{
+        padding: 15px 20px;
+        font-size: 1.2em;
+    }
+
+    .contact-container h2{
+        padding: 0 1%;
+    }
+    .contact-container p{
+        padding: 0 1%;
+        font-size: 1.1em;
+    }
+
+    footer{
+        padding-top: 2%;
+    }
 }
