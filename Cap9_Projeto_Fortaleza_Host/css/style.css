@@ -248,7 +248,7 @@ nav{
 .searchDomain-container{
     background-color: #34454e;
     text-align: center;
-
+    margin: 3% 0;
     padding: 3% 0;
 }
 
@@ -379,6 +379,19 @@ footer{
 
 /* PHONE (576px) */
 @media (max-width: 576px){
+    .navbar-logo .logo{
+        width: 35px;
+    }
+
+    .navbar-items li{
+        margin-right: 15px;
+        font-size: 0.9em;
+    }
+
+    .default-btn{
+        padding: 10px 15px;
+    }
+
     .main-banner{
         padding: 2.5rem 0;
     }
@@ -403,35 +416,47 @@ footer{
     .plan{
         width: 100;
         max-width: 100%;
-        padding: 2% 0;
+        padding: 2% 2%;
     }
 
     .searchDomain-container{
         padding: 4% 0;
+        margin: 3% 0;
     }
     .searchDomain-container h2{
-        padding-bottom: 1%;
-        font-size: 2.5em;
+        padding-bottom: 2%;
+        font-size: 1.6em;
+        padding: 0 4%;
     }
     .searchDomain-container p{
-        font-size: 1.1em;
+        font-size: 0.9em;
         padding-bottom: 0.5%;
     }
     .searchDomain-container input[type='text']{
-        padding: 3% 1%;
+        width: 60%;
+        padding: 3.5% 3%;
         margin-bottom: 3%;
     }
     .searchDomain-container input[type='submit']{
-        padding: 15px 20px;
+        padding: 8px 12px;
         font-size: 1.2em;
     }
 
     .contact-container h2{
-        padding: 0 1%;
+        padding: 0 5%;
+        font-size: 1.6em;
+        margin-bottom: 1.5%;
     }
     .contact-container p{
-        padding: 0 1%;
-        font-size: 1.1em;
+        padding: 0 5%;
+        font-size: 0.9em;
+        margin-bottom: 2.5%;
+    }
+    .contact-container input{
+        width: 350px;
+    }
+    .contact-container textarea{
+        width: 350px;
     }
 
     footer{
