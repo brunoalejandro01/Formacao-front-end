@@ -1,0 +1,20 @@
+.order .box{
+    border: 1px solid black;
+    height: 50px;
+    width: 35%;
+}
+
+.order{
+    display: flex;
+    margin: 2% 0;
+}
+
+#um{
+    order: 1;
+}
+#dois{
+    order: 2;
+}
+#tres{
+    order: 3;
+}

@@ -1,0 +1,37 @@
+.align-center .box,
+.flex-end .box,
+.stretch .box,
+.end .box{
+    border: 1px solid blue;
+    width: 50px;
+    height: 50px;
+}
+
+.align-center,
+.flex-end,
+.stretch,
+.end{
+    display: flex;
+    border: 1px solid rgb(255, 0, 0);
+    height: 150px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.stretch .box{
+    height: auto;
+}
+
+.end{
+    align-items: end;
+}
