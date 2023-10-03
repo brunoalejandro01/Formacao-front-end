@@ -1,0 +1,16 @@
+.align-self{
+    height: 200px;
+    display: flex;
+    align-items: end;
+    width: auto;
+    border: 1px solid blue;
+}
+
+.align-self .box{
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.align-self .different{
+    align-self: center;
+}
