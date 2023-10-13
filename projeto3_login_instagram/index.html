@@ -6,6 +6,7 @@
     <title>Instagram</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon_insta.png" type="image/x-icon">
+    <script src="script/script.js" defer></script>
 </head>
 <body>
     <main>
@@ -22,11 +23,11 @@
 
                     <img src="img/logo_instagram.png" alt="Logo do Instagram" id="logo-insta">
                     <form id="login-form">
-                        <input type="text" name="username" placeholder="Número de telefone, usuário ou e-mail">
+                        <input type="text" name="username" placeholder="Número de telefone, usuário ou e-mail" class="campoInput" autocomplete="off">
 
-                        <input type="password" name="password" placeholder="Senha">
+                        <input type="password" name="password" placeholder="Senha" class="campoInput">
 
-                        <input type="submit" value="Entrar">
+                        <button class="botao-desabilitado" id="btn_login" disabled>Entrar</button>
                     </form>
 
                     <div class="separator">
@@ -54,10 +55,10 @@
 
                 <div id="get-app-container">
                     <p>Obtenha o aplicativo</p>
-                    <a href="#">
+                    <a href="https://apps.apple.com/br/app/instagram/id389801252" target="_blank">
                         <img src="img/apple_btn.png" alt="Botão para baixar o Instagram na Apple Store">
                     </a>
-                    <a href="#">
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US&pli=1" target="_blank">
                         <img src="img/gplay_btn.png" alt="Botão para baixar o instagram na Play Store">
                     </a>
                 </div>
