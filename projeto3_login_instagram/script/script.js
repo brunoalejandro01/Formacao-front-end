@@ -13,7 +13,7 @@ function verificarInput(){
 
     // percorrendo os campos e verificando se estão prenchidos
     input.forEach(campos => {
-        if(campos.value.trim() === ''){
+        if(campos.value.trim() === '' || campos.validity.tooShort){
             todosPreenchidos = false
             return
         }
