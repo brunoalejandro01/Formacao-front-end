@@ -1,0 +1,89 @@
+/* Configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #505050;
+}
+
+a:hover{
+    color: rgb(93, 191, 252);
+    transform: scale(1.1);
+}
+
+h1{
+    font-size: 2.3em;
+}
+
+body{
+    background-color: rgb(222, 222, 222);
+}
+
+/* Barra de Navegação */
+#navbar{
+    padding: 1.5% 3%;
+    background-color: rgb(156, 209, 255);
+    box-shadow: 1px 2px 3px rgb(126, 126, 126);
+}
+
+#navbar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links{
+    display: flex;
+    margin-left: auto;
+}
+
+#nav-links a{
+    padding-left: 15px;
+}
+
+/* Conteudo Princial*/
+#container{
+    display: flex;
+    max-width: 1200px;
+    gap: 10%;
+    margin: 0 auto;
+    padding: 1% 3%;
+}
+
+#posts-container{
+    flex: 3 1 0;
+}
+
+.post{
+    margin-bottom: 2.5%;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.title,
+.description,
+.author{
+    margin-bottom: 1%;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.author{
+    color: #333;
+    font-weight: 700;
+}
